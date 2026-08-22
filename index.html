@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Velvet Brew Cafe</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            Velvet Brew
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Where Every Sip Feels Like Home</h1>
+
+            <p>
+                Welcome to Velvet Brew Cafe, where delicious coffee,
+                fresh food, and warm moments come together.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">Explore Menu</a>
+                <a href="#reservation" class="btn btn-secondary">
+                    Reserve a Table
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <h2>About Velvet Brew</h2>
+
+                <p>
+                    Velvet Brew Cafe is a cozy place where great coffee,
+                    delicious food, and warm hospitality come together.
+                </p>
+
+                <p>
+                    Our cafe was created with a simple idea — to give people
+                    a comfortable place to relax, connect, and enjoy every sip.
+                </p>
+
+                <h3>Why Choose Us?</h3>
+
+                <p>
+                    We use quality ingredients, freshly prepared food, and
+                    carefully brewed coffee to make every visit special.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+
+                <img src="images/about_section.jpg" alt="Velvet Brew Cafe interior">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+
+        <div class="menu-heading">
+            <h2>Our Menu</h2>
+            <p>Delicious choices made fresh for you.</p>
+        </div>
+        <div class="menu-category">
+
+            <h3>Coffee</h3>
+
+            <div class="menu-items">
+
+                <!-- Classic Coffee -->
+                <div class="menu-card">
+
+                    <img src="images/coffee.jpg" alt="Classic Coffee">
+
+                    <div class="menu-card-content">
+                        <h4>Classic Coffee</h4>
+
+                        <p>
+                            Rich and freshly brewed coffee made with carefully selected beans.
+                        </p>
+
+                        <span>Rs. 450</span>
+                        <button class="order-btn" data-item="Classic Coffee" data-price="450">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Cappuccino -->
+                <div class="menu-card">
+
+                    <img src="images/cappuccino.jpg" alt="Cappuccino">
+
+                    <div class="menu-card-content">
+                        <h4>Cappuccino</h4>
+
+                        <p>
+                            Smooth espresso topped with creamy milk foam for a delicious taste.
+                        </p>
+
+                        <span>Rs. 550</span>
+                        <button class="order-btn" data-item="Cappuccino" data-price="550">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Latte -->
+                <div class="menu-card">
+
+                    <img src="images/latte.jpg" alt="Latte">
+
+                    <div class="menu-card-content">
+                        <h4>Latte</h4>
+
+                        <p>
+                            A smooth blend of rich espresso and steamed milk with a creamy finish.
+                        </p>
+
+                        <span>Rs. 500</span>
+                        <button class="order-btn" data-item="Latte" data-price="500">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Desserts Category -->
+        <div class="menu-category">
+
+            <h3>Desserts</h3>
+
+            <div class="menu-items">
+
+                <!-- Chocolate Cake -->
+                <div class="menu-card">
+
+                    <img src="images/chocolate cake.jpg" alt="Chocolate Cake">
+
+                    <div class="menu-card-content">
+                        <h4>Chocolate Cake</h4>
+
+                        <p>
+                            Moist chocolate cake with a rich and delicious chocolate flavor.
+                        </p>
+
+                        <span>Rs. 650</span>
+                        <button class="order-btn" data-item="Chocolate Cake" data-price="650">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Cheesecake -->
+                <div class="menu-card">
+
+                    <img src="images/cheesecake.jpg" alt="Cheesecake">
+
+                    <div class="menu-card-content">
+                        <h4>Cheesecake</h4>
+
+                        <p>
+                            Creamy and smooth cheesecake topped with a delicious fruity finish.
+                        </p>
+
+                        <span>Rs. 700</span>
+                        <button class="order-btn" data-item="Cheesecake" data-price="700">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Brownie -->
+                <div class="menu-card">
+
+                    <img src="images/brownies.jpg" alt="Brownie">
+
+                    <div class="menu-card-content">
+                        <h4>Chocolate Brownie</h4>
+
+                        <p>
+                            Soft and fudgy chocolate brownie served fresh for a perfect sweet treat.
+                        </p>
+
+                        <span>Rs. 500</span>
+                        <button class="order-btn" data-item="Chocolate Brownie" data-price="500">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Fast Food Category -->
+        <div class="menu-category">
+
+            <h3>Fast Food</h3>
+
+            <div class="menu-items">
+
+                <!-- Classic Burger -->
+                <div class="menu-card">
+
+                    <img src="images/burger.jpg" alt="Classic Burger">
+
+                    <div class="menu-card-content">
+                        <h4>Classic Burger</h4>
+
+                        <p>
+                            Juicy grilled burger with fresh vegetables and our special sauce.
+                        </p>
+
+                        <span>Rs. 750</span>
+                        <button class="order-btn" data-item="Classic Burger" data-price="750">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Chicken Pizza -->
+                <div class="menu-card">
+
+                    <img src="images/chicken pizza.jpg" alt="Chicken Pizza">
+
+                    <div class="menu-card-content">
+                        <h4>Chicken Pizza</h4>
+
+                        <p>
+                            Delicious cheesy pizza topped with tender chicken and fresh ingredients.
+                        </p>
+
+                        <span>Rs. 850</span>
+                        <button class="order-btn" data-item="Chicken Pizza" data-price="850">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Club Sandwich -->
+                <div class="menu-card">
+
+                    <img src="images/club sandwitch.jpg" alt="Club Sandwich">
+
+                    <div class="menu-card-content">
+                        <h4>Club Sandwich</h4>
+
+                        <p>
+                            Fresh layered sandwich filled with chicken, vegetables, and creamy sauce.
+                        </p>
+
+                        <span>Rs. 700</span>
+                        <button class="order-btn" data-item="Club Sandwich" data-price="700">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Beverages Category -->
+        <div class="menu-category">
+
+            <h3>Beverages</h3>
+
+            <div class="menu-items beverage-items">
+
+                <!-- Fresh Lemonade -->
+                <div class="menu-card">
+
+                    <img src="images/fresh lemonade.jpg" alt="Fresh Lemonade">
+
+                    <div class="menu-card-content">
+                        <h4>Fresh Lemonade</h4>
+
+                        <p>
+                            Refreshing homemade lemonade with fresh lemon and a hint of mint.
+                        </p>
+
+                        <span>Rs. 350</span>
+                        <button class="order-btn" data-item="Fresh Lemonade" data-price="350">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Iced Tea -->
+                <div class="menu-card">
+
+                    <img src="images/iced tea.jpg" alt="Iced Tea">
+
+                    <div class="menu-card-content">
+                        <h4>Iced Tea</h4>
+
+                        <p>
+                            Chilled iced tea with a refreshing taste, perfect for a warm day.
+                        </p>
+
+                        <span>Rs. 400</span>
+                        <button class="order-btn" data-item="Iced Tea" data-price="400">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Fresh Orange Juice -->
+                <div class="menu-card">
+
+                    <img src="images/freshed orange juice.jpg" alt="Fresh Orange Juice">
+
+                    <div class="menu-card-content">
+                        <h4>Fresh Orange Juice</h4>
+
+                        <p>
+                            Freshly squeezed orange juice packed with natural flavor and freshness.
+                        </p>
+
+                        <span>Rs. 450</span>
+                        <button class="order-btn" data-item="Fresh Orange Juice" data-price="450">
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+
+        <div class="gallery-heading">
+            <h2>Our Gallery</h2>
+            <p>A glimpse of the cozy moments and delicious experiences at Velvet Brew.</p>
+        </div>
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="images/gallery1.jpg" alt="Velvet Brew Cafe">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery2.jpg" alt="Coffee at Velvet Brew Cafe">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery3.jpg" alt="Cafe interior">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery4.jpg" alt="Fresh food at Velvet Brew Cafe">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery5.jpg" alt="Dessert at Velvet Brew Cafe">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery6.jpg" alt="Cozy cafe atmosphere">
+            </div>
+
+        </div>
+    </section>
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+
+        <div class="reservation-heading">
+            <h2>Reserve a Table</h2>
+            <p>Book your table and enjoy a cozy experience at Velvet Brew Cafe.</p>
+        </div>
+
+        <div class="reservation-content">
+
+            <form class="reservation-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests">
+
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Special Request</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special request?"></textarea>
+                </div>
+
+                <button type="submit" class="reservation-btn">
+                    Reserve a Table
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <h3>Velvet Brew Cafe</h3>
+                <p>
+                    A cozy place for great coffee, delicious food,
+                    and warm moments.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+
+                <p>📍 Rahim Yar Khan</p>
+                <p>📞 +92 300 1234567</p>
+                <p>✉️ hello@velvetbrew.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Velvet Brew Cafe. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
